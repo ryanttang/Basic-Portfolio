@@ -1,14 +1,13 @@
-<style>
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     padding: 20px;
+    margin: 10px;
     background: #f1f1f1;
 }
-
 
 /* Style the top navigation bar */
 .topnav {
@@ -19,7 +18,7 @@ body {
 .topnav name {
   color: black;
   border: thin;
-  border-color: white;
+  border-color: #777777;
 }
 /* Style the topnav links */
 .topnav a {
@@ -29,21 +28,23 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-\
+    background-color: #4aaaa5;
 
 }
 
-/* Change color on hover */
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
+.links {
+  height: 109px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-color: #777777;
 }
 
-/* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {   
     float: left;
-    width: 60%;
+    width: 650px;
 }
 
 /* Right column */
@@ -54,28 +55,31 @@ body {
     padding-left: 20px;
 }
 
-/* Fake image */
-.fakeimg {
-    background-color: #aaa;
-    width: 200px;
-    padding: 20px;
-    margin: 10px;
-    float: left;
-}
-
-/* Add a card effect for articles */
 .card {
     background-color: white;
     padding: 20px;
     margin-top: 20px;
+    border-color: #777777;
+    
 }
 
 .row {
   display: flex;
+  justify-content: center;
+  border-color: #dddddd;
+  width: 960px;
 }
 
 .hr {
   border-color: grey;
+}
+
+.connect {
+  width: 270px;
+  display: flex;
+  justify-content: space-around;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 /* Clear floats after the columns */
@@ -85,12 +89,37 @@ body {
     clear: both;
 }
 
+div.gallery {
+  margin: 20px 15px 20px 10px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 250px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+div.desc {
+  padding: 5px;
+  text-align: center;
+  background-color: #4aaaa5;
+  color: #dddddd;
+}
+
 /* Footer */
 .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
+    background: #777777;
+    color: #dddddd;
     margin-top: 20px;
+    border-top: #4aaaa5;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -108,4 +137,3 @@ body {
         width:100%;
     }
 }
-</style>
